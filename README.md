@@ -1,1 +1,4 @@
-# log_server_docker
+## 📜 DOCS
+- README
+  - [English](README_en.md)<br>
+  - [Korean](README_kr.md)

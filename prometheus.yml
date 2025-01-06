@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 15s # 기본 스크래핑 주기
+
+scrape_configs:
+  # Prometheus 자체 메트릭 수집
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  # 애플리케이션 추가 (예: NestJS)
+  - job_name: "kakao_clone_back"
+    metrics_path: '/metrics'
+    scrape_interval: 5s # 특정 작업에 대한 스크래핑 주기
+    static_configs:
+      - targets: ["host.docker.internal:9000"] # Docker 컨테이너 외부 서비스 접근

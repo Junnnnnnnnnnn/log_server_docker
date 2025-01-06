@@ -34,7 +34,11 @@ loki query
 ```
 > View logs containing the specific string for the desired project.
 
+## prometheus
+Metrics are categorized by the `job name` set in [prometheus.yml](prometheus.yml)
 
 ## Notes
 - All containers are part of the `app network`.
 - When accessing the `loki container`, use `loki:3100` instead of `localhost:3100`.
+
+> ❗ When deploying to development or production servers, set the app domain and grafana domain.

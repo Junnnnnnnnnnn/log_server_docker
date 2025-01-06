@@ -28,7 +28,13 @@ loki query
 ```
 > 원하는 프로젝트의 특정 string 포함된 로그 확인
 
+## prometheus
+[prometheus.yml](prometheus.yml) 에서 설정한 `job name` 으로 application metrics 구분
 
 ## 주의사항
 - 각 컨테이너들은 `app network` 에 속해져 있다
 - `loki container` 접근 시 `localhost:3100` 가 아닌 `loki:3100` 으로 접근한다
+
+
+
+> ❗ 개발, 운영서버 배포시 `app domain` , `grafana domain` 셋팅

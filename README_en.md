@@ -23,14 +23,14 @@ Logs are categorized by the `job name` set in [promtail.conf](promtail-config.ym
 ```
 loki query
 
-{job="kakao_clone_back"}
+{job="your_job_name"}
 ```
 > View all logs for the desired project.
 
 ```
 loki query
 
-{job="kakao_clone_back"} |= "7c9b1247-1bd9-4946-aff6-a232dd1daa2b"
+{job="your_job_name"} |= "7c9b1247-1bd9-4946-aff6-a232dd1daa2b"
 ```
 > View logs containing the specific string for the desired project.
 

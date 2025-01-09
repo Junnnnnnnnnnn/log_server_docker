@@ -17,14 +17,14 @@
 ```
 loki query
 
-{job="kakao_clone_back"}
+{job="your_job_name"}
 ```
 > 원하는 프로젝트의 전체로그 확인
 
 ```
 loki query
 
-{job="kakao_clone_back"} |= "7c9b1247-1bd9-4946-aff6-a232dd1daa2b"
+{job="your_job_name"} |= "7c9b1247-1bd9-4946-aff6-a232dd1daa2b"
 ```
 > 원하는 프로젝트의 특정 string 포함된 로그 확인
 

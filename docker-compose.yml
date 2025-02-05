@@ -40,6 +40,8 @@ services:
   prometheus:
     image: prom/prometheus:latest
     container_name: prometheus
+    depends_on:
+      - pgexporter
     ports:
       - "9090:9090"
     volumes:

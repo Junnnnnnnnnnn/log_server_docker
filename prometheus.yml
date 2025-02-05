@@ -8,8 +8,8 @@ scrape_configs:
       - targets: ["localhost:9090"]
 
   # 애플리케이션 추가 (예: NestJS)
-  - job_name: "kakao_clone_back"
+  - job_name: "your_job_name"
     metrics_path: '/metrics'
     scrape_interval: 5s # 특정 작업에 대한 스크래핑 주기
     static_configs:
-      - targets: ["host.docker.internal:9000"] # Docker 컨테이너 외부 서비스 접근
+      - targets: ["your_targts_domain"] # Docker 컨테이너 외부 서비스 접근
